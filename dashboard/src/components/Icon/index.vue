@@ -3,14 +3,20 @@
 </template>
 
 <script>
-import Loading from './Loading.vue'
-import Copy from './Copy.vue'
-import ChevronDown from './ChevronDown.vue'
 
+import Loading from './Loading.vue';
 export default {
-  components: { Loading, Copy, ChevronDown },
+
+  components: { Loading },
   props: {
-    name: { type: String, required: true }
+    name: { type: String, required: true}
   }
+
+
+
 }
 </script>
+
+<style>
+
+</style>

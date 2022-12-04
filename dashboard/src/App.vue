@@ -16,7 +16,7 @@ export default {
     const router = useRouter()
     const route = useRoute()
 
-    watch(() => route.path, async () => {
+    watch(route.path , async () => {
       if (route.meta.hasAuth) {
         const token = window.localStorage.getItem('token')
         if (!token) {

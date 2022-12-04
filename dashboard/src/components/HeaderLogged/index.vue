@@ -42,10 +42,10 @@ export default {
     const store = useStore('User')
 
     const logoutLabel = computed(() => {
-      if (!store.currentUser.name) {
+      if (!store.currentUser) {
         return '...'
       }
-      return `${store.currentUser.name} (sair)`
+      return ` ${store.currentUser.name} (sair)`
     })
 
     function handleLogout () {
